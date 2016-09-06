@@ -1,0 +1,21 @@
+{
+  "name": "optagelse-angmat",
+  "description": "Optagelse AngularMaterial",
+  "main": "index.js",
+  "authors": [
+    "Kanakarajan Kailasham"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.0",
+    "angular-material-icons": "^0.7.1"
+  }
+}

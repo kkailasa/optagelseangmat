@@ -1,0 +1,27 @@
+<form name="applicantDetailsForm" ng-submit="vm.saveApplicant()">
+    <div layout-gt-xs="column">
+      <md-input-container class="md-block" flex-gt-xs>
+        <label>CPR-nummer</label>
+        <input name="cprNummer" ng-model="vm.applicant.cprNummer" disabled>
+      </md-input-container>
+      <md-input-container class="md-block" flex-gt-xs>
+        <label>Fornavn(e)</label>
+        <input name="lastName" ng-model="vm.applicant.lastName" disabled>
+      </md-input-container>
+      <md-input-container class="md-block" flex-gt-xs>
+        <label>Efternavn</label>
+        <input name="firstName" ng-model="vm.applicant.firstName" disabled>
+      </md-input-container>
+      <md-input-container class="md-block" flex-gt-xs>
+        <label>Vej</label>
+        <input name="vej" ng-model="vm.applicant.vej" >
+      </md-input-container>
+      <div class="md-actions">
+        <md-button class="md-primary md-raised date-row" 
+                   type="submit"
+                   ng-disabled="applicantDetailsForm.$invalid">
+          Save
+        </md-button>
+      </div>
+    </div>
+  </form>

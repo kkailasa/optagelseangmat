@@ -1,0 +1,33 @@
+<div class='md-padding' layout="row" layout-wrap>
+    <md-card ng-repeat="application in vm.applicant.applications" style="width: 300px;">
+        <md-card-header md-colors="{background: 'primary-200-0.5'}">
+            <md-card-header-text>
+                <span class="md-title">{{application.mainArea}}</span>
+                <span class="md-subhead">{{application.status}}</span>
+            </md-card-header-text>
+        </md-card-header>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{application.institutionName}}</span>
+                <span class="md-subhead">{{application.address}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>
+                <span class="md-body-2">Adresse</label><br/>
+           <span class="md-body-2">{{application.address}}</span>
+            </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button class="md-icon-button" aria-label="slet">
+                <md-icon md-svg-icon="delete"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="print">
+                <md-icon md-svg-icon="print"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="bilag">
+                <md-icon md-svg-icon="upload"></md-icon>
+            </md-button>
+        </md-card-actions>
+    </md-card>
+</div>
