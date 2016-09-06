@@ -27,6 +27,7 @@ module FtuApp {
             telefon : '52147234',
             applications : [
                 {
+                    applicationId : 100,
                     mainArea : 'Studentereksamen, STX',
                     category : 'Naturvidenskabelige studieretninger: Bioteknologi A - Matematik A',
                     institutionName : 'Viby Gymnasium',
@@ -34,9 +35,11 @@ module FtuApp {
                     address : 'Søndervangs Allé 45',
                     prioritet : 1,
                     status : 'Ikke-afhentet',
-                    studiesStart : new Date('2016-07-01')
+                    studiesStart : new Date('2016-07-01'),
+                    signingDate : new Date('2016-06-01')
                 },
                 {
+                    applicationId : 101,
                     mainArea : 'Studentereksamen, STX',
                     category : 'Naturvidenskabelige studieretninger: Bioteknologi A - Matematik A',
                     institutionName : 'Aarhus Katedralskole',
@@ -47,6 +50,7 @@ module FtuApp {
                     studiesStart : new Date('2016-07-01')
                 },
                 {
+                    applicationId : 102,
                     mainArea : 'Studentereksamen, STX',
                     category : 'Naturvidenskabelige studieretninger: Bioteknologi A - Matematik A',
                     institutionName : 'Viby Gymnasium',
@@ -57,6 +61,7 @@ module FtuApp {
                     studiesStart : new Date('2016-07-01')
                 },
                  {
+                    applicationId : 103,
                     mainArea : 'Studentereksamen, STX',
                     category : 'Naturvidenskabelige studieretninger: Bioteknologi A - Matematik A',
                     institutionName : 'Viby Gymnasium',
@@ -67,6 +72,7 @@ module FtuApp {
                     studiesStart : new Date('2016-07-01')
                 },
                  {
+                    applicationId : 104,
                     mainArea : 'Studentereksamen, STX',
                     category : 'Naturvidenskabelige studieretninger: Bioteknologi A - Matematik A',
                     institutionName : 'Viby Gymnasium',

@@ -18,7 +18,8 @@ var FtuApp;
     }());
     FtuApp.Applicant = Applicant;
     var Application = (function () {
-        function Application(mainArea, institutionName, category, by, address, prioritet, status, studiesStart) {
+        function Application(applicationId, mainArea, institutionName, category, by, address, prioritet, status, studiesStart, signingDate) {
+            this.applicationId = applicationId;
             this.mainArea = mainArea;
             this.institutionName = institutionName;
             this.category = category;
@@ -27,6 +28,7 @@ var FtuApp;
             this.prioritet = prioritet;
             this.status = status;
             this.studiesStart = studiesStart;
+            this.signingDate = signingDate;
         }
         return Application;
     }());

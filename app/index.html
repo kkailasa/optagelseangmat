@@ -24,8 +24,10 @@
     
     <div layout="column" flex id="wrapper">
         <div ng-include="'dist/views/toolbar-header.html'"></div>
-        <md-content>
-            <div ng-include="'dist/views/main-content.html'" id="content"></div>    
+        <md-content id="content">
+            <h2 class="md-title">{{vm.applicant.firstName}} {{vm.applicant.lastName}}</h2>
+            <h3 class="md-subhead">{{vm.applicant.cprNummer}}</h3>
+            <div ui-view ></div>
         </md-content>  
     </div>
     
@@ -34,6 +36,7 @@
     <script src="./bower_components/angular-aria/angular-aria.js"></script>
     <script src="./bower_components/angular-material/angular-material.js"></script>
     <script src="./bower_components/angular-messages/angular-messages.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="./bower_components/angular-material-icons/angular-material-icons.js"></script>
     
     <script src="./dist/models.js"></script>

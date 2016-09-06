@@ -21,6 +21,7 @@ module FtuApp {
 
     export class Application {
         constructor(
+            public applicationId : number,
             public mainArea : string,
             public institutionName : string,
             public category : string,
@@ -28,7 +29,8 @@ module FtuApp {
             public address : string,
             public prioritet : number,
             public status : string,
-            public studiesStart : Date
+            public studiesStart : Date,
+            public signingDate? : Date
         ){
             
         }

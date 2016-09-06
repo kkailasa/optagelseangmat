@@ -4,6 +4,15 @@
             <md-card-header-text>
                 <span class="md-title">{{application.mainArea}}</span>
                 <span class="md-subhead">{{application.status}}</span>
+                <div layout="row" layout-align="end center">
+                    <md-button class="md-icon-button" aria-label="increase" ng-if="application.prioritet != 1">
+                        <md-icon md-svg-icon="increase"></md-icon>
+                    </md-button>
+                    {{application.prioritet}}
+                    <md-button class="md-icon-button" aria-label="decrease" ng-if="application.prioritet != vm.applicant.applications.length">
+                        <md-icon md-svg-icon="decrease"></md-icon>
+                    </md-button>
+                </div>
             </md-card-header-text>
         </md-card-header>
         <md-card-title>
@@ -14,12 +23,16 @@
         </md-card-title>
         <md-card-content>
             <p>
-                <span class="md-body-2">Adresse</label><br/>
-           <span class="md-body-2">{{application.address}}</span>
+                <span class="md-body-2">Studiestart</label><br/>
+                <span class="md-body-2">{{application.studiesStart | date:"dd-MM-yyyy"}}</span>
+            </p>
+            <p>
+                <span class="md-body-2">Signeringsdato</label><br/>
+                <span class="md-body-2">{{application.signingDate | date:"dd-MM-yyyy"}}</span>
             </p>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
-            <md-button class="md-icon-button" aria-label="slet">
+            <md-button class="md-icon-button" aria-label="slet" ng-click="vm.removeApplication($event,application.applicationId)">
                 <md-icon md-svg-icon="delete"></md-icon>
             </md-button>
             <md-button class="md-icon-button" aria-label="print">
